@@ -16,7 +16,7 @@ const ProjectCard = ({ year, title, tags }) => {
               alt={title}
               className="transition-transform duration-200 ease-in-out transform group-hover:scale-105"
             />
-            <button className="absolute top-3 right-3 text-p-sm border rounded-lg px-2 py-1 hidden group-hover:block bg-blue-50 text-bg-dark">
+            <button className="absolute top-3 right-3 text-p-sm border-2 rounded-lg px-2 py-1 hidden group-hover:block bg-blue-50 text-bg-dark font-medium border-teal-300">
               Case Study
             </button>
           </div>

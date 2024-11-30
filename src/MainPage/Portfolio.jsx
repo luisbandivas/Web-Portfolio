@@ -9,7 +9,7 @@ import ScrollToTop from "../Component/ScrollToTop";
 const Portfolio = () => {
   return (
     <BrowserRouter>
-      <div className="bg-bg-dark">
+      <div className="bg-bg-dark font-sans">
         <section id="herosection">
           <HeroPage />
         </section>
