@@ -1,14 +1,28 @@
 import React from "react";
 import HorizontalLine from "../Component/HorizontalLine";
+import P1 from "../assets/Image/P1.png";
 
 const ProjectCard = ({ year, title, tags }) => {
   return (
     <div>
       <div className="flex w-full">
-        <div className="w-1/12">
+        <div className="w-1/12 2xl:w-2/12">
           <p>{year}</p>
         </div>
-        <div className="w-11/12 h-[600px] rounded-md bg-zinc-50"></div>
+        {title === "Eyomn" ? (
+          <div className="relative w-11/12 2xl:w-10/12 h-[560px] 2xl:h-[600px] rounded-sm bg-bg-dark overflow-hidden cursor-pointer group">
+            <img
+              src={P1}
+              alt={title}
+              className="transition-transform duration-200 ease-in-out transform group-hover:scale-105"
+            />
+            <button className="absolute top-3 right-3 text-p-sm border rounded-lg px-2 py-1 hidden group-hover:block bg-blue-50 text-bg-dark">
+              Case Study
+            </button>
+          </div>
+        ) : (
+          <div className="w-11/12 h-[600px] rounded-sm bg-zinc-50"></div>
+        )}
       </div>
       <div className="flex w-full py-4">
         <div className="w-1/12"></div>

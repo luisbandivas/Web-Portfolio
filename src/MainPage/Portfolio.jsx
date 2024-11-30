@@ -3,23 +3,28 @@ import HeroPage from "./HeroPage";
 import ProjectSection from "../Page/ProjectSection";
 import AboutSection from "../Page/AboutSection";
 import ContactSection from "../Page/ContactSection";
+import { BrowserRouter } from "react-router-dom";
+import ScrollToTop from "../Component/ScrollToTop";
 
 const Portfolio = () => {
   return (
-    <div className="bg-bg-dark">
-      <section id="herosection">
-        <HeroPage />
-      </section>
-      <section id="projectSection">
-        <ProjectSection />
-      </section>
-      <section id="aboutSection">
-        <AboutSection />
-      </section>
-      <section id="contactSection">
-        <ContactSection />
-      </section>
-    </div>
+    <BrowserRouter>
+      <div className="bg-bg-dark">
+        <section id="herosection">
+          <HeroPage />
+        </section>
+        <section id="projects">
+          <ProjectSection />
+        </section>
+        <section id="about">
+          <AboutSection />
+        </section>
+        <section id="contact">
+          <ContactSection />
+        </section>
+        <ScrollToTop />
+      </div>
+    </BrowserRouter>
   );
 };
 

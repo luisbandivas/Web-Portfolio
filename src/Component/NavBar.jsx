@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Logo from "../assets/Image/logo.svg";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [fadesIn, setFadesIn] = useState("");
@@ -28,30 +29,36 @@ const NavBar = () => {
       <section className="w-3/5 flex justify-between">
         <p>Under Development</p>
         <nav className="flex gap-6 font-medium">
-          <button
-            onClick={(e) => {
-              e.preventDefault();
-              handleScroll("projectSection");
-            }}
+          <Link
+            to="projects"
+            onClick={() =>
+              document
+                .getElementById("projects")
+                .scrollIntoView({ behavior: "smooth" })
+            }
           >
             Project
-          </button>
-          <button
-            onClick={(e) => {
-              e.preventDefault();
-              handleScroll("aboutSection");
-            }}
+          </Link>
+          <Link
+            to="about"
+            onClick={() =>
+              document
+                .getElementById("about")
+                .scrollIntoView({ behavior: "smooth" })
+            }
           >
             About
-          </button>
-          <button
-            onClick={(e) => {
-              e.preventDefault();
-              handleScroll("contactSection");
-            }}
+          </Link>
+          <Link
+            to="contact"
+            onClick={() =>
+              document
+                .getElementById("contact")
+                .scrollIntoView({ behavior: "smooth" })
+            }
           >
             Contact
-          </button>
+          </Link>
         </nav>
       </section>
     </div>

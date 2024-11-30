@@ -38,6 +38,10 @@ export default {
           "100%": { opacity: 1 },
           "0%": { opacity: 0 },
         },
+        spin: {
+          from: { transform: "rotate(0deg)" },
+          to: { transform: "rotate(360deg)" },
+        },
       },
       animation: {
         slideInL: "slideInL 1s ease-out forwards",
@@ -46,6 +50,7 @@ export default {
         slideOutR: "slideOutR 1s ease-in forwards",
         fadeIn: "fadeIn 1s ease-in-out",
         fadeOut: "fadeOut 1s ease-in-out",
+        spin: "spin 5s linear infinite",
       },
     },
   },
