@@ -13,6 +13,40 @@ export default {
       fontFamily: {
         sans: ["Inter", "sans-serif"],
       },
+      keyframes: {
+        slideInL: {
+          from: { transform: "translateX(-100%)", opacity: "0" },
+          to: { transform: "translateX(0)", opacity: "1" },
+        },
+        slideInR: {
+          from: { transform: "translateX(100%)", opacity: "0" },
+          to: { transform: "translateX(0)", opacity: "1" },
+        },
+        slideOutL: {
+          from: { transform: "translateX(0)", opacity: "1" },
+          to: { transform: "translateX(-100%)", opacity: "0" },
+        },
+        slideOutR: {
+          from: { transform: "translateX(0)", opacity: "1" },
+          to: { transform: "translateX(100%)", opacity: "0" },
+        },
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
+        fadeOut: {
+          "100%": { opacity: 1 },
+          "0%": { opacity: 0 },
+        },
+      },
+      animation: {
+        slideInL: "slideInL 1s ease-out forwards",
+        slideInR: "slideInR 1s ease-out forwards",
+        slideOutL: "slideOutL 1s ease-in forwards",
+        slideOutR: "slideOutR 1s ease-in forwards",
+        fadeIn: "fadeIn 1s ease-in-out",
+        fadeOut: "fadeOut 1s ease-in-out",
+      },
     },
   },
   plugins: [],

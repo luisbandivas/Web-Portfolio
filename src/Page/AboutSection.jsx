@@ -2,6 +2,7 @@ import React from "react";
 import { FaLevelDownAlt } from "react-icons/fa";
 import HorizontalLine from "../Component/HorizontalLine";
 import AboutImg from "../assets/Image/about-img.png";
+import Rays from "../assets/Image/Rays.svg";
 
 const AboutSection = () => {
   return (
@@ -19,8 +20,12 @@ const AboutSection = () => {
             <p>Java</p>
             <p>C#</p>
             <p>Python</p>
+            <p>MySQL</p>
+            <p>Firebase</p>
+            <p>Git</p>
             <p>Adobe Illustrator</p>
             <p>Figma</p>
+            <p>Sketch</p>
           </article>
         </div>
         <div className="w-3/5">
@@ -29,7 +34,7 @@ const AboutSection = () => {
               <FaLevelDownAlt className="rotate-90  scale-y-[-1]" />
               <p>About</p>
             </section>
-            <div className="p-4 bg-blue-50 rounded-full"></div>
+            <img src={Rays} alt="ray icon" className="w-8 h-8" />
           </div>
           <img src={AboutImg} alt="me img" className="w-1/3 rounded-md my-8" />
           <article>
