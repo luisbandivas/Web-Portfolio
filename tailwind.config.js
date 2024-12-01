@@ -3,7 +3,11 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      colors: { "f-light": "#F5F5F5", "bg-dark": "#292929" },
+      colors: {
+        "f-light": "#F5F5F5",
+        "bg-dark": "#292929",
+        "f-gray": "#c3c3c3",
+      },
       fontSize: {
         "p-sm": "13.33px",
         "p-rg": "16px",
@@ -12,6 +16,7 @@ export default {
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"],
+        Raleway: ["Raleway", "sans-serif"],
       },
       keyframes: {
         slideInL: {

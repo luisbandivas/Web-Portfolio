@@ -19,15 +19,18 @@ const ProjectCard = ({ year, title, tags }) => {
           <p>{year}</p>
         </div>
         {title === "Eyomn" ? (
-          <div
-            className="relative w-11/12 2xl:w-10/12 h-[560px] 2xl:h-[600px] rounded-sm bg-bg-dark overflow-hidden cursor-pointer group"
-            onClick={handleNavigation}
-          >
+          <div className="relative w-11/12 2xl:w-10/12 h-[560px] 2xl:h-[600px] rounded-sm bg-bg-dark overflow-hidden cursor-pointer group">
             <img
               src={P1}
               alt={title}
               className="transition-transform duration-200 ease-in-out transform group-hover:scale-105"
             />
+            <button
+              className="absolute top-3 right-3 px-3 py-1 rounded-md border-2 border-zinc-300 bg-orange-400 text-f-light font-semibold hidden group-hover:block"
+              onClick={handleNavigation}
+            >
+              Case Study
+            </button>
           </div>
         ) : (
           <div className="w-11/12 2xl:w-10/12 h-[560px] 2xl:h-[600px] rounded-sm bg-zinc-50"></div>

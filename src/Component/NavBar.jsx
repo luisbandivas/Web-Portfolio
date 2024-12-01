@@ -20,7 +20,7 @@ const NavBar = () => {
 
   return (
     <div
-      className={`text-p-rg flex py-8 px-8 2xl:px-40 ${fadesIn} bg-bg-dark text-f-light`}
+      className={`text-p-rg flex py-8 px-8 2xl:px-10 ${fadesIn} bg-bg-dark text-f-light`}
     >
       <section
         className="w-2/5 font-medium flex items-center gap-2 cursor-pointer"
@@ -32,7 +32,12 @@ const NavBar = () => {
       <section className="w-3/5 flex justify-between items-center">
         <p>Under Development</p>
         <nav className="flex gap-6 font-medium">
-          <button onClick={() => handleNavigation("/projects")}>Project</button>
+          <button
+            onClick={() => handleNavigation("/projects")}
+            className="hover:text-teal-300"
+          >
+            Project
+          </button>
           <button onClick={() => handleNavigation("/about")}>About</button>
           <button onClick={() => handleNavigation("/contact")}>Contact</button>
         </nav>
