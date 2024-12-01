@@ -28,7 +28,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="h-full flex flex-col justify-between py-8 px-8 2xl:px-40">
+    <div className="flex flex-col justify-between py-0 px-8 2xl:px-40  text-f-light h-[60vh]">
       <header></header>
       <section className="flex">
         <div className="w-2/5"></div>
@@ -55,7 +55,7 @@ const HeroSection = () => {
             <img
               src={Rays}
               alt="Decorative rays graphic"
-              className="w-8 h-8 mb-2"
+              className="w-8 h-8 mb-2 hover:animate-spin"
             />
           </div>
           <div className="w-3/5 flex gap-2 items-center">

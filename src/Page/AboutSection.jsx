@@ -34,7 +34,11 @@ const AboutSection = () => {
               <FaLevelDownAlt className="rotate-90  scale-y-[-1]" />
               <p>About</p>
             </section>
-            <img src={Rays} alt="ray icon" className="w-8 h-8" />
+            <img
+              src={Rays}
+              alt="ray icon"
+              className="w-8 h-8 hover:animate-spin"
+            />
           </div>
           <img src={AboutImg} alt="me img" className="w-1/3 rounded-md my-8" />
           <article>
