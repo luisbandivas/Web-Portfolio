@@ -16,43 +16,43 @@ const ContactSection = () => {
       </div>
       <div className="w-3/5 flex flex-col justify-between">
         <nav>
-          <section className="flex gap-2 items-center mb-2">
-            <HiExternalLink />
+          <section className="items-center mb-2">
             <a
               href="https://www.linkedin.com/in/luis-mario-bandivas-033b3929a/"
               target="_blank"
-              className="hover:text-teal-300"
+              className="hover:text-teal-300 flex gap-2 items-center"
             >
+              <HiExternalLink />
               LinkedIn
             </a>
           </section>
-          <section className="flex gap-2 items-center mb-2">
-            <HiExternalLink />
+          <section className="items-center mb-2">
             <a
               href="https://github.com/luisbandivas"
               target="_blank"
-              className="hover:text-teal-300"
+              className="hover:text-teal-300 flex gap-2 items-center"
             >
+              <HiExternalLink />
               Github
             </a>
           </section>
-          <section className="flex gap-2 items-center mb-2">
-            <HiExternalLink />
+          <section className="items-center mb-2">
             <a
               href="https://web.facebook.com/luis.bandivas"
               target="_blank"
-              className="hover:text-teal-300"
+              className="hover:text-teal-300 flex gap-2 items-center"
             >
+              <HiExternalLink />
               Facebook
             </a>
           </section>
-          <section className="flex gap-2 items-center mb-2">
-            <HiExternalLink />
+          <section className="items-center mb-2">
             <a
               href="https://www.instagram.com/luis_bndvs/"
               target="_blank"
-              className="hover:text-teal-300"
+              className="hover:text-teal-300 flex gap-2 items-center"
             >
+              <HiExternalLink />
               Instagram
             </a>
           </section>
@@ -60,7 +60,12 @@ const ContactSection = () => {
         <section>
           <h4 className="text-p-lg">I am currently looking for internship</h4>
           <article className="flex items-center gap-2">
-            <a href="" className="text-h5">
+            <a
+              href="mailto:jimboybandivas@eyomn.com"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="text-h5"
+            >
               jimboybandivas@gmail.com
             </a>
             <FiCopy
